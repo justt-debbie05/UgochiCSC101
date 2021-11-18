@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{graphicx}
+\usepackage{multirow} % Required for multirows
+\usepackage{siunitx}
+\sisetup{round-mode=places,
+         round-precision=2}
+     \begin{document}
+     	\begin{table}[h!]
+     		\begin{center}
+     			\caption{Multicoloum table.}
+     			\label{tab:table1}
+     			\begin{tabular}{|l|s|r|}
+     				\hline
+     				\textbf{Value 1} & \texbf{Value 2} & \textbf{Value 3}\\
+     				$\alpha$ & $\beta$ & $\gamma$ \\
+     				\hline
+     				\multicolumn{2}{|c|}{12} & a\\
+     				\hline
+     				2 & 10.1 & b\\
+     				3 & 23.113231 & 7 c\\
+     				\hline
+     				\multicolumn{3}{|c|}{\inclegraphics[width=0.15\linewidth]{Tablet}}\\
+     				\hline
+     			\end{tabular}
+     		\end{center}
+     	\end{table}
+     \end{document}
